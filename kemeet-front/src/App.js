@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { MediaDiv } from "./styledComponent";
 
+import { useState, useEffect } from "react";
+
+import GlobalStyle from "./GlobalStyle";
+import Nav from "./Nav";
+import Footer from "./Footer";
+import loadingIcon from "./loading.svg";
 function App() {
+  // 모바일 사이즈에 꽉 맞는 height 설정
+  // function setScreenSize() {
+  //   let vh = window.innerHeight * 0.01;
+  //   document.documentElement.style.setProperty("--vh", `${vh}px`);
+  // }
+  // useEffect(() => {
+  //   setScreenSize();
+  // });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      {/* <MediaDiv /> */}
+        <Nav />
+        <Footer />
+    </>
   );
-}
+};
 
 export default App;
