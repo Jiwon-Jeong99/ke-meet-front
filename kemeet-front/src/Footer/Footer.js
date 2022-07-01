@@ -1,4 +1,4 @@
-import { Footer, FooterBig, FooterSmall } from "./styledComponent";
+
 
 import React from "react";
 

@@ -1,8 +1,8 @@
-import {} from "./styledComponent";
+
 
 import React from "react";
 
-const Nav = () => {
+const NavDiv = () => {
   return (
     <div>Navbar</div>
   );
