@@ -2,14 +2,17 @@
   display: flex;
   position: relative;
   color: orange;
+  height: 50vh;
+  width: 75vw;
 }
 
-.Logo{
+.Logo {
   display: flex;
   position: absolute;
+  
 }
 
-.Hamburger{
+.Hamburger {
   display: flex;
   position: absolute;
 }
