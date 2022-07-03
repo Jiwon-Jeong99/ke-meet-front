@@ -1,3 +1,15 @@
-div {
-    color:orange;
+.NavBar {
+  display: flex;
+  position: relative;
+  color: orange;
+}
+
+.Logo{
+  display: flex;
+  position: absolute;
+}
+
+.Hamburger{
+  display: flex;
+  position: absolute;
 }
