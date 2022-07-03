@@ -7,12 +7,12 @@ const Nav = () => {
       <img 
         className={styles.Logo} 
         alt="logo" 
-        src="../img/logo.png"
+        src="./img/logo.png"
       ></img>
       <img
         className={styles.Hamburger}
         alt="hamburger"
-        src="../img/hamburger.png"
+        src="./img/hamburger.png"
       ></img>
     </div>
   );
