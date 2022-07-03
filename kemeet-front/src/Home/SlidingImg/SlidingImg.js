@@ -1,75 +1,55 @@
-import React from "react";
+import React, {Component} from "react";
+import { FC, useEffect, useRef, useState } from 'react';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { Helmet } from "react-helmet";
 import { Route, Link } from "react-router-dom";
-import styles from "./SlidingImg.module.css";
 
+import React, { Component } from "react";
+import Slider from "react-slick";
+
+export default class AutoPlay extends Component {
+  render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 2000,
+      autoplaySpeed: 2000,
+      cssEase: "linear"
+    };
+    return (
+      <div>
+        <h2>Auto Play</h2>
+        <Slider {...settings}>
+          <div>
+            <h3>1</h3>
+          </div>
+          <div>
+            <h3>2</h3>
+          </div>
+          <div>
+            <h3>3</h3>
+          </div>
+          <div>
+            <h3>4</h3>
+          </div>
+          <div>
+            <h3>5</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+        </Slider>
+      </div>
+    );
+  }
+}
 const SlidingImg = () => {
   return (
-    <div className="SlidingImg">
-      <Helmet>
-        <script src="./auto.js"></script>
-      </Helmet>
+    <div>SlidingImg</div>
+  )
+}
 
-      <div id="visual">
-        <div class="on">
-          <Link to="#">
-            <img
-              src="https://cdn.pixabay.com/photo/2020/08/19/00/13/sea-5499649_960_720.jpg"
-              alt="1"
-              width="100%"
-              height="100%"
-            />
-          </Link>
-        </div>
-        <div>
-          <Link to="#">
-            <img
-              src="https://cdn.pixabay.com/photo/2020/09/28/10/07/face-mask-5609287_960_720.png"
-              alt="2"
-              width="100%"
-              height="100%"
-            />
-          </Link>
-        </div>
-        <div>
-          <Link to="#">
-            <img
-              src="https://cdn.pixabay.com/photo/2020/10/01/15/18/tiger-5618802_960_720.jpg"
-              alt="3"
-              width="100%"
-              height="100%"
-            />
-          </Link>
-        </div>
-        <div>
-          <Link to="#">
-            <img
-              src="https://cdn.pixabay.com/photo/2020/01/26/10/33/chess-4794265_960_720.jpg"
-              alt="4"
-              width="100%"
-              height="100%"
-            />
-          </Link>
-        </div>
-        <section>
-          <div id="left">
-            <span></span>
-            <span></span>
-          </div>
-          <div id="right">
-            <span></span>
-            <span></span>
-          </div>
-        </section>
-        <section id="control">
-          <Link to class="on" href="#"></Link>
-          <Link to="#"></Link>
-          <Link to="#"></Link>
-          <Link to="#"></Link>
-        </section>
-      </div>
-    </div>
-  );
-};
-
-export default SlidingImg;
+export default SlidingImg
